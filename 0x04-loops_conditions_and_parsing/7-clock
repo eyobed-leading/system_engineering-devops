@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
-# This script prints every minute of the day from 00:00 to 23:59
+# This script displays every minute of the day in HH:MM format using nested loops
 
-hour=0
-while [ $hour -lt 24 ]
-do
-  minute=0
-  while [ $minute -lt 60 ]
-  do
-    printf "%02d:%02d\n" $hour $minute
-    ((minute++))
+for hour in {00..23}; do
+  for minute in {00..59}; do
+    echo "$hour:$minute"
   done
-  ((hour++))
 done
