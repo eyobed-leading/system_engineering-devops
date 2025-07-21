@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-# Display message infinitely and handle CTRL+C gracefully
+# Script to kill the 7-highlander process
 
-trap 'echo "I am invincible!!!"' SIGINT
-
-while true
-do
-    echo "To infinity and beyond"
-    sleep 1
-done
+pkill -f 7-highlander
