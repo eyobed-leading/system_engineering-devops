@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A Bash script that lists all processes with their hierarchy and user info
+ps axjf
