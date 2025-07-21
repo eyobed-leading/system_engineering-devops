@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display PID of the process only if one instance is running
+
+count=$(pgrep -cf "4-to_infinity_and_beyond")
+if [ "$count" -eq 1 ]; then
+    pgrep -f "4-to_infinity_and_beyond"
+fi
