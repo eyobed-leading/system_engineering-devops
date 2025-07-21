@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script that shows only bash PIDs
+
+ps | grep '[b]ash' | awk '{print $1}'
+
