@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script stops 4-to_infinity_and_beyond only if it is running
+
+if pgrep -f 4-to_infinity_and_beyond > /dev/null; then
+    pkill -f 4-to_infinity_and_beyond
+fi
