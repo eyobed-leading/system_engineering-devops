@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Display message infinitely and handle CTRL+C gracefully
+
+trap 'echo "I am invincible!!!"' SIGINT
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 1
+done
